@@ -54,7 +54,7 @@ const Products = () => {
             <div>
 
                 {/* {Header Section} */}
-                <div className="text-center mb-10 max-w-[600px] mx-auto " data-aos="fade-up">
+                <div className="text-center mb-10 max-w-[600px] mx-auto" data-aos="fade-up">
                     <h1 className="text-3xl font-bold" data-aos="fade-up">Products</h1>
                     <p className="text-xs text-gray-400" data-aos="fade-up">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit asperiores modi Sit asperiores modi
@@ -84,6 +84,14 @@ const Products = () => {
                         ))}
                     </div>
                 </div>
+
+                {/* {Veiw All Product} */}
+                <div className='flex justify-center my-5'>
+                    <button className='bg-primary/80 cursor-pointer text-center text-white px-2 py-1  rounded-md'>
+                        View All Products
+                    </button>
+                </div>
+
             </div>
         </div>
     )
