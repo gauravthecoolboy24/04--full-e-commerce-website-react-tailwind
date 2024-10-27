@@ -4,32 +4,32 @@ import Img3 from "../../assets/shirt/shirt3.png"
 import { FaStar } from "react-icons/fa6";
 
 
+const ProductsData = [
+    {
+        id: 1,
+        img: Img1,
+        title: "Casual Wear",
+        description:
+            "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+        id: 2,
+        img: Img2,
+        title: "Printed shirt",
+        description:
+            "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+    {
+        id: 3,
+        img: Img3,
+        title: "Women shirt",
+        description:
+            "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    },
+];
+
+
 const TopProducts = () => {
-
-    const ProductsData = [
-        {
-            id: 1,
-            img: Img1,
-            title: "Casual Wear",
-            description:
-                "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        },
-        {
-            id: 2,
-            img: Img2,
-            title: "Printed shirt",
-            description:
-                "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        },
-        {
-            id: 3,
-            img: Img3,
-            title: "Women shirt",
-            description:
-                "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        },
-    ];
-
     return (
         <div>
             <div className="dark:bg-gray-800">
