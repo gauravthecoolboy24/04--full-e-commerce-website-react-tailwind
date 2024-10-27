@@ -17,7 +17,7 @@ const Banner = () => {
                     {/* {Text Details Section} */}
                     <div className='flex flex-col justify-center gap-6 sm:pt-0 text-xl h-full px-2 sm:px-0 mx-2'>
                         <h1 data-aos="fade-up" className='text-3xl sm:text-4xl font-bold'>Winter Sale upto 50% Off</h1>
-                        <p data-aos="fade-up" className='text-sm tracking-wider leading-5 text-gray-400 '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at option</p>
+                        <p data-aos="fade-up" className='text-sm tracking-wider leading-5 text-gray-500 '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at option</p>
 
                         <div className='flex flex-col gap-7'>                            
                             <div data-aos="fade-up" className='flex items-center gap-4'>
