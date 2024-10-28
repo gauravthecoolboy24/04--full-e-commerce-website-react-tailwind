@@ -29,7 +29,7 @@ const TestimonialData = [
 ];
 
 var setting = {
-  dots: false,
+  dots: true,
   arrows: true,
   infinite: true,
   speed: 1000,
