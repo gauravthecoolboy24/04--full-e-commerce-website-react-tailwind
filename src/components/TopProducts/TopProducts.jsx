@@ -32,8 +32,8 @@ const ProductsData = [
 const TopProducts = () => {
     return (
         <div>
-            <div className="dark:bg-gray-800">
-                <div className="container">
+            <div className="dark:bg-gray-800 pt-5">
+                <div className="container pb-5">
 
 
                     {/* {Header Section} */}
@@ -53,7 +53,7 @@ const TopProducts = () => {
 
                     {/* {Body Section} */}
                     <div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center mb-20 ">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center mb-20">
                             {ProductsData.map((data) => (
                                 // eslint-disable-next-line react/jsx-key
                                 <div data-aos="zoom-in" className="bg-white dark:bg-gray-700 hover:bg-black/80 dark:hover:bg-primary rounded-2xl shadow-2xl p-5 hover:text-white relative duration-300 group max-w-[300px] transition-all" >
