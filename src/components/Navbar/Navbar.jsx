@@ -95,7 +95,7 @@ const Navbar = () => {
 
 
             {/* {Lower Navbar} */}
-            <div className='flex justify-center '>
+            <div className='flex justify-center'>
                 <ul className='sm:flex items-center py-2 gap-4 hidden'>
                     {Menu.map((data) => (
                         <li key={data.id} >
@@ -122,7 +122,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-        </div>
+        </div>        
     )
 }
 
