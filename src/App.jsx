@@ -9,6 +9,7 @@ import TopProducts from './components/TopProducts/TopProducts';
 import Banner from './components/Banner/Banner';
 import Subscribe from './components/Subscribe/Subscribe';
 import Testimonial from './components/Testimonial/Testimonial';
+import Footer from './components/Footer/Footer';
 
 
 const App = () => {
@@ -25,7 +26,7 @@ const App = () => {
 
   return (
     <>
-      <div>
+      <div className='bg-white dark:bg-gray-900 dark:text-white'>
         <Navbar />
         <Hero />
         <Products />
@@ -34,6 +35,7 @@ const App = () => {
         <Subscribe />
         <Products />
         <Testimonial />
+        <Footer />
       </div>
     </>
   )
