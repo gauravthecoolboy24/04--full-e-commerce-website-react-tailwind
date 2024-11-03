@@ -2,6 +2,7 @@ import trolley from '../../assets/trolley.png'
 import { FaCaretDown, FaSearch } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import DarkMode from './DarkMode';
+import PropTypes from 'prop-types';
 
 
 const Menu = [
@@ -49,10 +50,10 @@ const DropDownLinks = [
     }
 ];
 
-const Navbar = () => {
+const Navbar = ({handleOrderPopup}) => {
 
     return (
-        <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40'>
+        <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-50'>
 
             {/* {Upper Navbar} */}
             <div className=' bg-primary/40 py-2'>
@@ -79,7 +80,7 @@ const Navbar = () => {
 
                         {/* {button order} */}
                         <div className='flex gap-3 top-1 items-center'>
-                            <button onClick={() => alert("Ordering Not availble yet")} className='bg-gradient-to-r text-white py-1 px-4 rounded-full from-primary to-secondary transition-all duration-200 flex items-center gap-3 group'>
+                            <button onClick={() => {handleOrderPopup()}} className='bg-gradient-to-r text-white py-1 px-4 rounded-full from-primary to-secondary transition-all duration-200 flex items-center gap-3 group'>
                                 <span className='group-hover:block hidden transition-all duration-200'> Order</span>
                                 <FaCartShopping className='text-xl test-white drop-shadow-sm cursor-pointer' />
                             </button>
@@ -95,7 +96,7 @@ const Navbar = () => {
 
 
             {/* {Lower Navbar} */}
-            <div className='flex justify-center'>
+            <div data-aos="zoom-in" className='flex justify-center'>
                 <ul className='sm:flex items-center py-2 gap-4 hidden'>
                     {Menu.map((data) => (
                         <li key={data.id} >
@@ -125,5 +126,9 @@ const Navbar = () => {
         </div>        
     )
 }
+
+Navbar.propTypes = {
+    handleOrderPopup: PropTypes.func.isRequired,
+};
 
 export default Navbar

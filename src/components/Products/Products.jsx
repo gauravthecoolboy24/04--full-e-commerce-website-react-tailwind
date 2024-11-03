@@ -3,8 +3,10 @@ import Img2 from '../../assets/women/women2.jpg'
 import Img3 from '../../assets/women/women3.jpg'
 import Img4 from '../../assets/women/women4.jpg'
 import { FaStar } from "react-icons/fa6";
+import PropTypes from 'prop-types';
 
-const Products = () => {
+
+const Products = ({handleOrderPopup}) => {
 
     const ProductsData = [
         {
@@ -87,7 +89,7 @@ const Products = () => {
 
                 {/* {Veiw All Product} */}
                 <div className='flex justify-center my-5'>
-                    <button className='bg-primary/80 cursor-pointer text-center text-white px-2 py-1  rounded-md'>
+                    <button onClick={() => {handleOrderPopup()}} className='bg-primary/80 cursor-pointer text-center text-white px-2 py-1  rounded-md'>
                         View All Products
                     </button>
                 </div>
@@ -95,6 +97,10 @@ const Products = () => {
             </div>
         </div>
     )
+}
+
+Products.propTypes = {
+    handleOrderPopup: PropTypes.func
 }
 
 export default Products

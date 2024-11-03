@@ -2,6 +2,7 @@ import Img1 from "../../assets/shirt/shirt.png"
 import Img2 from "../../assets/shirt/shirt2.png"
 import Img3 from "../../assets/shirt/shirt3.png"
 import { FaStar } from "react-icons/fa6";
+import PropTypes from 'prop-types'
 
 
 const ProductsData = [
@@ -29,7 +30,7 @@ const ProductsData = [
 ];
 
 
-const TopProducts = () => {
+const TopProducts = ({handleOrderPopup}) => {
     return (
         <div>
             <div className="dark:bg-gray-800 pt-5">
@@ -73,7 +74,7 @@ const TopProducts = () => {
                                         </span>
                                         <h1 data-aos="zoom-in" className="font-bold text-xl ">{data.title}</h1>
                                         <p data-aos="zoom-in" className="text-sm text-gray-500 group-hover:text-white duration-300 line-clamp-2 ">{data.description}</p>
-                                        <button data-aos="zoom-in" className="bg-gradient-to-r from-primary to-secondary group-hover:scale-105 group-hover:text-white mx-auto rounded-3xl px-4 py-1 mt-4">
+                                        <button onClick={() =>{ handleOrderPopup()}} data-aos="zoom-in" className="bg-gradient-to-r from-primary to-secondary group-hover:scale-105 group-hover:text-white mx-auto rounded-3xl px-4 py-1 mt-4">
                                             Order Now
                                         </button>
                                     </div>
@@ -86,6 +87,10 @@ const TopProducts = () => {
             </div>
         </div>
     )
+}
+
+TopProducts.propTypes = {
+    handleOrderPopup: PropTypes.func
 }
 
 export default TopProducts
