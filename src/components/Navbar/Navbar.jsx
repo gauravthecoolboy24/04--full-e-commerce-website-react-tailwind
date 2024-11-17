@@ -53,7 +53,7 @@ const DropDownLinks = [
 const Navbar = ({handleOrderPopup}) => {
 
     return (
-        <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-50'>
+        <div className=' shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-50'>
 
             {/* {Upper Navbar} */}
             <div className=' bg-primary/40 py-2'>
